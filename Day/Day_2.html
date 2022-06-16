@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Second training </title>
+    <style>
+        .heading{
+            background-color: rgb(12, 12, 12);
+            color: whitesmoke;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 22px;
+            margin: 0px;
+        }
+        h1 span,h2 span{
+           font-weight: 900; 
+           color: red;
+           
+        }
+        .media{
+            border: 2px solid green;
+            border-radius: 50px;
+            text-align: center;
+            background-image: url(./Images/Background/Login.jpg);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0px;
+            margin-bottom: 10px;
+        }
+        .media h1,h2{
+            color: white;
+            margin: 0px;
+        }
+        h2{
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .media video , audio{
+            
+            width: 800px;
+            margin: 0px;
+            border: 2px solid white;
+            border-radius: 30px 0px 30px 0px;
+            margin: 5px;
+            
+        }
+        .media audio{
+            border: none;
+        }
+        .media .tables{
+           margin-left: 600px;
+           margin-bottom: 30px;
+        }
+        .media .tables table{
+            text-align: center;
+            border: 2px dotted white;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+   <h1 class="heading">STATIC WEB_DEVELOPMENT TRAINING IS ORGANIZED BY ACES <span> <marquee behavior="" direction="">(ASSOCIATION OF COMPUTER ENGINEERING STUDENTS)</marquee> </span></h1> 
+   <div class="media">
+       <h1>Your Video file is going to play once you click <span>Controls</span> .</h1>
+  
+    <video  controls autoplay muted>
+
+       <source src="./Clips/Video/mov_bbb.mp4"/>
+    </video>
+    <h1>Your Audio file is going to play once you click <span>Controls</span> .</h1>
+    <audio src="./Clips/Audio/epic_battle_music_1-6275.mp3" controls></audio>
+    <h2>HTML TABLE WITH <span>ROWS AND COLLUMS </span>IS GOING TO LOAD HERE</h2>
+    <div style="text-align: center;" class="tables">
+    <table border="2px">
+           <tr>
+               <th>S.N.</th>
+               <th>NAME:</th>
+               <th>FEE:</th>
+               <th>GROUP:</th>
+               <th>REMARKS:</th>
+           </tr>
+           <tr>
+               <td>1</td>
+               <td>Subash KUMAR YADAV</td>
+               <td>150</td>
+               <td>BCT CD</td>
+               <td rowspan="3">PAID</td>
+           </tr>
+           <tr>
+            <td>2</td>
+            <td> Nigam YADAV</td>
+            <td>150</td>
+            <td>BCT CD</td>
+        </tr>  <tr>
+            <td>3</td>
+            <td>Ritesh YADAV</td>
+            <td>150</td>
+            <td>BCT CD</td>
+        </tr>  <tr>
+            <td>4</td>
+            <td>Sonnu YADAV</td>
+            <td>150</td>
+            <td>BCT CD</td>
+        </tr>
+        <tr>
+            <td colspan="2">TOTAL FEE:</td>
+            <td>600</td>
+            <td>PAISA</td>
+        </tr>
+            
+        </table>
+    </div>    
+    
+   </div>
+</body>
+</html>

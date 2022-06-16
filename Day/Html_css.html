@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(./Images/Background/Login.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-size: 22px;
+            font-family: sans-serif;
+           
+        }
+        .form-control input,select{
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 600;
+            border: navajowhite;
+            background: transparent;
+            border-bottom: 2px solid white;
+            color: white;
+            width: 400px;
+            margin: 0px;
+            padding: 0px;
+           
+
+        }
+        .form-control select{
+            color: rgb(251, 250, 250);
+           background: transparent;
+            border: 1px solid;
+            border-radius: 40px;
+            zoom: normal;
+        }
+        .form-control label{
+            color: white;
+            font-size: 20px;
+            margin-top: 4px;
+        }
+        .form-control button{
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            font-size: 22px;
+            margin-top: 10px;
+            width: 400px;
+            border-radius: 40px;
+            margin-bottom: 10px;
+        }
+        .row .form-control button:hover{
+            color: white;
+            background-color: orange;
+            cursor: pointer;
+            border: 1px solid orange;
+           
+        }
+        .row{
+            padding-left: 400px;
+            border: 2px solid white;
+            background-color: rgba(80, 80, 81, 0.284);
+            border-radius: 30px 0px 30px 0px;
+            box-sizing: border-box;
+            box-shadow: 20px rgb(0, 0, 0,0.1);
+           
+        }
+
+    </style>
+</head>
+<body>
+    <div class="row">
+        <h1>Sign <span style="color: red;">Up</span>  To Continue..</h1>
+    <div class="form-control">
+        <form action="../Day/text.txt" method="POST">
+            <label for="">Name:</label><br>
+            <input  type="text" value="" placeholder="Enter Your Name.." name="name" required/><br>
+            <label for="">Email:</label><br>
+            <input type="email" value="" name="email" placeholder="Enter Your Email" required /><br>
+            <label for="">Password</label><br>
+            <input type="password" name="password" placeholder="Enter Your Password.." required ><br>
+            <label for="">Phone:</label><br>
+            <input type="number" value="9811202751" placeholder="Enter Your Phone.." name="phone" readonly/><br>
+            <label for="">Address:</label><br>
+            <input type="text" value="" name="address" placeholder="Enter Your Address.." disabled /><br>
+            <label for="">Select Your Favourite Language</label> <br>
+            <select name="" id="">
+                <option value="" selected>C</option>
+                <option value="" selected>C++</option>
+                <option value="" selected>Java</option>
+                <option value="" selected>PHP</option>
+                <option value="" selected>Javascript</option>
+                <option value="" selected>JSP/SERVLET</option>
+                <option value="" selected>Python</option>
+                <option value="" selected>Fortrain</option>
+               
+
+            </select>  <br>
+            <label for="brower">Select Your Favourite Browser</label> <br>
+            <input list="browsers" id="browser" name="browser" />
+            <datalist  id="browsers" >
+                <option value="Edge"/>
+                <option value="Edge"/>
+                <option value="Edge"/>
+                <option value="Edge"/>
+                <option value="Edge"/>
+                <option value="Edge"/>
+
+            </datalist><br>
+            <button autofocus type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
